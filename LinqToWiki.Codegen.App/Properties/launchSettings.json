@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LinqToWiki.Codegen.App": {
+      "commandName": "Project",
+      "commandLineArgs": "https://en.wikipedia.org/w/api.php"
+    }
+  }
+}
