@@ -98,7 +98,7 @@ namespace LinqToWiki.Download
                 var fileParameter = parameter as HttpQueryFileParameter;
                 if (fileParameter != null)
                 {
-                    request.AddFile(fileParameter.Name, stream => fileParameter.File.CopyTo(stream), "noname");
+                    request.AddFile(fileParameter.Name, stream => fileParameter.File.CopyTo(stream), "noname", fileParameter.File.Length);
                 }
             }
         }
